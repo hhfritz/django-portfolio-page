@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+    <h1>All Blogs</h1>
+    <h2>Auf dieser Seite gibt es {{ blogs.count }} Blog{{ blogs.count|pluralize }}.</h2>
+
+     {% for blog in blogs %}
+
+    <a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
+    <p>{{ blog.created_at|date:'d. F Y - H:i' }}</p>
+    <p>{{ blog.text|striptags|truncatechars:100 }} </p>
+    
+
+    {% endfor %}
+
+{% endblock %}
