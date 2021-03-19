@@ -19,7 +19,7 @@ cryptography==2.8
 cupshelpers==1.0
 distlib==0.3.0
 distro==1.4.0
-Django==3.0.3
+Django==3.1.6
 docker==4.2.0
 docker-compose==1.25.4
 docker-pycreds==0.4.0
@@ -48,7 +48,7 @@ pacman-mirrors==4.16.2
 paramiko==2.7.1
 pep517==0.8.1
 pexpect==4.8.0
-Pillow==6.2.1
+Pillow==8.1.1
 pipenv==2018.11.26
 ply==3.11
 progress==1.5
